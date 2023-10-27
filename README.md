@@ -1,4 +1,4 @@
-# Consituency-Bursary-System
+# Constituency-Bursary-System
 The main objective of the project was to design a system that facilitates the process of bursary applications, awards, processing, and disbursements. The specific objectives of the project are as follows:
 
 1. Enable applicants to apply for bursaries online: The system provides an online platform where individuals can submit their bursary applications electronically.
@@ -12,3 +12,6 @@ The main objective of the project was to design a system that facilitates the pr
 Having these objectives, the project aimed to streamline the bursary process, make it more accessible through online applications, ensure fair awarding based on ratings, and provide transparent and accountable disbursements through regular reporting.
 
 Moreover, the web application includes an email system, which enables seamless communication to applicants throughout the bursary process. Potential users are required to set up PHPMailer on their local PCs, configuring it with the appropriate SMTP settings specific to their email service provider. This ensures reliable and personalized email notifications, including application confirmations, bursary award notifications, and disbursement updates.
+
+### Potential next steps:
+Utilize data analysis and machine learning techniques to improve the accuracy and efficiency of the rating system. By analyzing historical data on successful bursary awards and applicant profiles, the system can identify patterns and trends that can inform future award decisions. Machine learning algorithms can help automate the rating process and make it more objective and consistent.
