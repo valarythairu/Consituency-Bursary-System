@@ -1,0 +1,102 @@
+<?php
+/* Attempt MySQL server connection. Assuming you are running MySQL
+server with default setting (user 'root' with no password) */
+$link = mysqli_connect($servername="127.0.0.1",$username="root",$password="",$database="fund");
+ 
+// Check connection
+if($link === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}else{
+
+//SQL QUERY
+$query = "SELECT * FROM applicationform";
+$result = mysqli_query($link, $query);
+?>
+<html>
+<head>
+<img class="logo" src="feutech.png">
+<img class="itam" src="itam.png">
+<br>
+<div class="piyu"> <img class="line" src="peyu.png"> <br> <h4> Grade Ranking Program </h4> </div>
+<br>
+</head>
+<br>
+<div class="result">
+<?php
+	if(isset($_GET['submit'])){
+	$level = $_GET['level'];
+	$study = $_GET['study'];
+	$Ward = $_GET['Ward'];
+	$Wards = $_GET['Wards'];
+	$Family = $_GET['Family'];
+	$siblings = $_GET['siblings'];
+	$rank = "";
+	if ($level >= University)
+	{
+		$rank = "20%";
+	}
+	elseif ($level >= College )
+	{
+		$rank ="15%";
+	}
+
+	if ($level >= National)
+	{
+		$rank = "20%";
+	}
+	elseif ($level >= ExtraCounty )
+	{
+		$rank ="15%";
+	}
+	elseif ($level >= County )
+	{
+		$rank ="10%";
+	}
+	elseif ($level >= Other )
+	{
+		$rank ="5%";
+	}
+	elseif ($study >=dayscholar )
+	{
+		$rank ="15%";
+	}
+	elseif ($study >= boarding )
+	{
+		$rank ="20%";
+	}
+	elseif ( $Ward <= Iriani )
+	{
+		$rank ="20%";
+	}
+	elseif ($Ward >= Chinga )
+	{
+		$rank ="20%";
+	}
+	elseif ($Ward >= Karima )
+	{
+		$rank ="20%";
+	}
+	elseif ($Ward >= Mahiga )
+	{
+		$rank ="20%";
+	}
+	elseif ($siblings >= 2 )
+	{
+		$rank ="10%";
+	}
+	elseif ($siblings <= 2)
+	{
+		$rank ="20%";
+	}
+	
+if ($rank != " ")
+{
+	
+	echo"<h2>Result </h2> ";
+	echo nl2br (" <h3>Name: $name \n  Grade: $grade \n  Rank: $rank </h3>");
+}
+	}
+
+?>
+</div>
+</body>

@@ -1,0 +1,380 @@
+
+<html>
+
+<head>
+    <title>BURSARY APPLICATION FORM FOR STUDENTS IN SECONDARY SCHOOLS, COLLEGES AND UNIVERSITIES </title>
+    <style>
+        .label {
+            text-align: start;
+            margin-left: 90px;
+       
+        }
+    </style>
+</head>
+
+<body background="cdf.png" background-size: 100% 100%; style="background-image: url(cdf.png); background-repeat: no-repeat;background-size: cover;">
+    <center>
+        <h2> PART A: TO BE FILLED BY THE APPLICANT/PARENT/GUARDIAN (STEP THREE)</h2>
+        <form action="insertapplicationform.php" method="post" style="background-color: seagreen;margin-left: 50px;margin-right: 300px; border-radius: 20px;border-width:100px; height: 4400px;">
+            <div class="label">
+                <h2> 1. Personal Institutional and other details. </h2>
+
+                <label for="name">Full Name of Student <br> (As it appears in ID or birth certificate)</label><br>
+            </div>
+            <input type="text" name="name" id="name" required><br><br>
+            <div class="label">
+               <label for="gender"> Gender </label> <br>
+               <input type ="radio" name="gender" value="male" checked>Male <br>
+               <input type="radio" name="gender" value="female">Female<br>
+           </div><br>
+           <div class="label">
+              <label for="Date of birth" > Date of Birth <br>
+              </div>
+              <input type="number" name="date of birth" value="date of birth" required><br> <br>
+            <div class="label">
+                <label for="ID number">ID NUMBER</label><br>
+            </div>
+            <input type="number" name="ID number" id="ID number" required><br><br>
+            <div class="label">
+                <label for="School"> Name Of School/Secondary School/College/university</label><br>
+            </div>
+            <input type= "text" name="school" id="school" required><br> <br>
+            <div class="label">
+                <label for="study">Year of Study</label><br>
+                <select name="study" id="study">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select><br><br>
+            </div>
+            <div class="label">
+                <label for="Course Duration"> Course Duration (Years) </label><br>
+            </div>
+            <input type="text" name="years" id="years" required ><br>
+             <br><br>
+            <div class= "label">
+                <label for="Expected Completion Year">Expected Year of Completion</label> <br>
+            </div>
+            <input type="number" name="year" id="year" required> <br>
+            <br><br>
+
+            <div class="label"
+                label for="Mobile no."> Telephone Number </label><br>
+            </div>
+            <input type="number" name="telephone number" id="telephone number" required> <br>
+            <br><br>
+
+            <div class ="label">
+            <label for="Physical address"> Physical Address </label><br>
+        </div>
+        <input type="text" name="address" id="address" required><br>
+        <br><br>
+            <div class="label">
+                <label for="Ward" required>Ward</label><br>
+                <select name="Ward" id="ward">
+                <option value="Karima">Karima</option>
+                <option value="Iriani">Iriani</option>
+                <option value="Chinga">Chinga</option>
+                <option value="Mahiga">Mahiga</option>
+                
+            </select><br><br>
+            </div>
+
+            <div class="label">
+                <label for="amount"> Amount Applied for (Kshs) </label>
+                </div>
+                <input type="number" name="amount applied for" id="amount applied for" required><br>
+                <br>  
+                <div class="label">
+                <h3> 2. Family Background. (COMPULSORY)</h3>
+
+                <label for="Family"> Family </label><br>
+                 <select name="Family" id="Family">
+                <option value="Total Orphan">Total Orphan</option>
+                <option value="Partial Orphan">Partial Orphan</option>
+                <option value="Single Parent">Single Parent</option>
+                <option value="Both Parents Alive">Both Parents Alive</option>
+                <option value="Other">Guardian</option>
+            </select><br><br> 
+            </div>
+            <div class="label">
+            <label for="siblings"> Number of Siblings alive </label>
+            </div>
+            <input type="number" name="siblings alive" id="siblings" required>
+            <br><br>
+            <div class="label">
+            <label for ="Estimated Family Income">Estimated Family Income (Annually) </label>
+            </div>
+            <input type="number" name="Estimated Family Income" id="Expected Family Income">
+            <br><br> 
+            (Attach Photocopies of Death Certificate(s) (where applicable))
+            <br> <br>
+            <div class="label">
+                <h2>APPLICANT IS REQUIRED TO FILL ATLEAST ONE GUARDIAN</h2>
+            <h4> a) Father </h4><br>
+
+            <label for="Father Name"> Name </label>
+        </div>
+        <input type="text" name="Father Name" id ="Father Name"><br><br>
+
+        <div class="label">
+
+         <label for="Telephone number"> Telephone number </label>
+     </div>
+     <input type="number" name="Telephone number" id="Telephone number">
+     <br> <br>
+     <div class="label">
+     <label for="Occupation 1">Occupation </label>
+     </div>
+     <input type="text" name ="Occupation 1" id ="Occupation 1">
+     <br><br>
+      <div class="label" >
+                <label for="Employment">Type of Employment</label><br>
+                <input type ="radio" name="Employment" value="permanent" >Permanent <br>
+                <input type ="radio" name="Employment" value="Retired" checked>Retired <br>
+                <input type ="radio" name="Employment" value="Casual" >Casual <br>
+                <input type ="radio" name="Employment" value="Contractual">Contractual <br>
+                <input type ="radio" name="Employment" value="Self-Employed">Self-Employed <br>
+                <input type ="radio" name="Employment" value="None" > None <br>
+                
+            <br><br>
+            </div>
+            <div class="label">
+
+         <label for="Income"> Main Source of Income </label>
+     </div>
+     <input type="text" name="Main Source of Income" id="Main Source of Income" required>
+     <br> <br>
+              <div class="label">
+            <h5> b) Mother </h5><br>
+
+            <label for="Mother Name"> Name </label>
+        </div>
+        <input type="text" name="Mother Name" id ="Mother Name"><br><br>
+
+        <div class="label">
+
+         <label for="Telephone no."> Telephone number </label>
+     </div>
+     <input type="number" name="Telephone no." id="Telephone no.">
+     <br> <br>
+     <div class="label">
+     <label for="Occupation 2">Occupation </label>
+     </div>
+     <input type="text" name ="Occupation 2" id ="Occupation 2">
+     <br><br>
+      <div class="label" >
+                <label for="Employment" >Type of Employment</label><br>
+                <input type ="radio" name="Employment" value="permanent" >Permanent <br>
+                <input type ="radio" name="Employment" value="Retired" checked>Retired <br>
+                <input type ="radio" name="Employment" value="Casual" >Casual <br>
+                <input type ="radio" name="Employment" value="Contractual">Contractual <br>
+                <input type ="radio" name="Employment" value="Self-Employed">Self-Employed <br>
+                <input type ="radio" name="Employment" value="None" > None <br>
+                
+            <br><br>
+            </div>
+             <div class="label">
+
+         <label for="Income"> Main Source of Income </label>
+     </div>
+     <input type="text" name="Main Source of Income" id="Main Source of Income" required>
+     <br> <br>
+              <div class="label">
+            <h6> c) Guardian </h6><br>
+
+            <label for="Guardian Name"> Name </label>
+        </div>
+        <input type="text" name="Guardian Name" id ="Guardian Name"><br><br>
+
+        <div class="label">
+
+         <label for="Telephone"> Telephone number </label>
+     </div>
+     <input type="number" name="Telephone" id="Telephone">
+     <br> <br>
+     <div class="label">
+     <label for="Occupation 3">Occupation </label>
+     </div>
+     <input type="text" name ="Occupation" id ="Occupation 3">
+     <br><br>
+      <div class="label">
+                <label for="Employment">Type of Employment</label><br>
+                <input type ="radio" name="Employment" value="permanent" >Permanent <br>
+                <input type ="radio" name="Employment" value="Retired" checked>Retired <br>
+                <input type ="radio" name="Employment" value="Casual" >Casual <br>
+                <input type ="radio" name="Employment" value="Contractual">Contractual <br>
+                <input type ="radio" name="Employment" value="Self-Employed">Self-Employed <br>
+                <input type ="radio" name="Employment" value="None" > None <br>
+                
+            <br><br>
+            </div>
+             <div class="label">
+
+         <label for="Income"> Main Source of Income </label>
+     </div>
+     <input type="text" name="Income" id="Income" required>
+     <br> <br>
+ <div class="label">
+                <h2> 3. Applicant's Additional Information. (COMPULSORY) </h2>
+
+                <label for="userdata">a) Why are you applying for bursary?</label><br>
+            </div>
+            <textarea name="userdata" id="userdata" cols="20" rows="5" required>Type here...</textarea><br><br>
+            
+            <div class="label">
+            <label for="funding"> b) Have you received financial support/bursary from NG-CDF in the past? </label>
+        </div>
+        <input type ="checkbox" name="Yes" >Yes <br>
+                <input type ="checkbox" name="No" > No<br>
+                <br><br>
+                <div class="label">
+                    <label for="support">If yes, specify how much and when you last received support</label>
+                </div>
+                 <textarea name="support" id="support" cols="20" rows="5" required>Type here...</textarea><br><br>
+            
+                 <div class="label">
+            <label for="Additional funding"> c) Have you received financial support or scholarship from other organizations in the past? </label>
+        </div>
+        <input type ="checkbox" name="Yes" >Yes <br>
+                <input type ="checkbox" name="No"  > No<br>
+                <br><br>
+                <div class="label">
+                <label for="details">If yes, Provide details.</label>
+            </div>
+
+                <textarea name="details" id="details" cols="20" rows="5" required>Type here...</textarea><br><br>
+                <div class="label">
+                <h2> 4. EDUCATION FUNDING HISTORY. (COMPULSORY) </h2>
+
+                <label for="education funding"> State the main source of funding for your education in the past (Fill where applicable) </label><br>
+            </div>
+           <div class="label">
+                <label for="Secondary">a) In Secondary School</label>
+            </div>
+
+                <textarea name="Secondary funding" id="Secondary" cols="20" rows="2" required>Type here...</textarea><br><br>
+                <div class="label">
+                <label for="College funding">b) In College.</label>
+            </div>
+
+                <textarea name="College funding" id="College funding" cols="20" rows="2" required>Type here...</textarea><br><br>
+                <div class="label">
+                <label for="university funding">c) In University.</label>
+            </div>
+
+                <textarea name="university funding" id="university funding" cols="20" rows="2" required>Type here...</textarea><br><br>
+
+                 <center>
+        <h2> PART B: APPLICANT'S ACADEMIC PERFOMANCE (COMPULSORY) </h2>
+        <div class="label">
+        <label for="Academic performance"> a) What is your average academic performance? </label>
+    </div>
+         <div class="label">
+                <label for="performance">Academic Performance</label><br>
+                <input type ="radio" name=" Excellent" value="Excellent"> Excellent <br>
+                <input type ="radio" name="Very Good" value="Very Good"> Very Good <br>
+                <input type ="radio" name="Good" value="Good" > Good <br>
+                <input type ="radio" name="Fair" value="Fair" > Fair <br>
+                <input type ="radio" name="Poor" value="Poor"> Poor <br>
+                
+            <br><br>
+            </div>
+            <div class="label">
+        <label for="school"> b) Have you been sent away from school? </label>
+    </div>
+    <input type ="radio" name="Yes" value="Yes"> Yes <br>
+                <input type ="radio" name="No" value="No"> No <br>
+                 <div class="label">
+                <label for="reasons">If yes, provide reasons for your absence and specify number of weeks you stayed away from school </label>
+            </div>
+
+                <textarea name="reasons" id="reasons" cols="20" rows="2" required>Type here...</textarea><br><br>
+                 <div class="label">
+                <label for="annual fees"> c) Annual fees (as per fees structure) Ksh. </label><br>
+            </div>
+            <input type="number" name="annual fees" id="annual fees" required><br><br>
+            <div class="label">
+                <label for="last balance"> d)Last Semester's/ Term balance</label><br>
+            </div>
+            <input type="number" name="last balance" id="last balance" required><br>
+            <br><br>
+             <div class="label">
+                <label for="Current balance"> e) This Semester's/Term balance</label><br>
+            </div>
+            <input type="number" name="Current balance" id="Current balance" required><br><br>
+            <div class="label">
+                <label for="Next balance">Next Semester's/ Term balance</label><br>
+            </div>
+            <input type="number" name="Next bursary" id="Next balance" required><br><br>
+
+
+
+            <h2> 4. REFEREES  (COMPULSORY)</h2>
+             <div class="label">
+                <label for="REFEREES"> The student/parent/guardian should provide the names and telephone contacts of atleast two referees who know the family well. </label>
+            </div>
+            <div class="label">
+                <label for="Name">1. Full Name</label><br>
+            </div>
+            <input type="Name" name="Name" id="Name" required><br><br>
+            <div class="label">
+                <label for="Telephone number">TELEPHONE NUMBER</label><br>
+            </div>
+            <input type="number" name="Telephone number" id="Telephone number" required><br>
+            <br><br>
+             <div class="label">
+                <label for="Full Name">2. Full Name</label><br>
+            </div>
+            <input type="Full name" name="Full name" id="Full name" required><br><br>
+            <div class="label">
+                <label for="telephone number">TELEPHONE NUMBER</label><br>
+            </div>
+            <input type="number" name="telephone number" id="telephone number" required><br><br>
+             <br><br>
+
+            <input type="submit" value="SUBMIT" name="submit" style="margin-bottom: 30px; cursor: pointer; padding: 10px; border-radius: 20px; width: 150px; font-size: 18px; font-weight: bold;color: darkgreen;background-color: darkturquoise;">
+        </form>
+    </center>
+    <section>
+            <nav>
+                 <ul>
+                    <p class="par"> VISION: EQUITABLE SOCIAL-ECONOMIC DEVELOPMENT COUNTRYWIDE
+                    </p><br><br>
+
+                    <p class="liw">FOLLOW US ON</p><br>
+                    <div class="icons">
+                        <a href="facebook.com/">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                        <a href="instagram.com/__tash.a">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                        <a href="twitter.com/">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                        <a href="google.com/">
+                            <ion-icon name="logo-google"></ion-icon>
+                        </a>
+                        <a href="skype.com/">
+                            <ion-icon name="logo-skype"></ion-icon>
+                        </a>
+                    </div>
+
+                    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+            </nav>
+            </td>
+
+    <script type="text/javascript">
+        function check() {
+            alert("Application form Successfully Submitted!");
+
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<html>
+<head>
+<title>Sponsorship Applicant Form</title>
+</head>
+<h2>Applicants</h2>
+<body bgcolor="lightseagreen">
+
+
+
+<form action="<?php echo$_SERVER['PHP_SELF']; ?>" method="post">
+  	<table cellpadding="5" cellspacing="2" border="1" align="center" class="table" id="example">
+		<thead>		
+		        <tr>			        
+                	
+                    
+                    <th>Full name of Student</th>
+                    <th>gender</th>
+					<th>Date of Birth</th>
+					<th>ID number/Birth Certificate no.</th>
+					<th>Name of School</th>
+					<th>Year of study</th>
+					<th>Course Duration</th>
+					<th>Expected Year of completion </th>
+					<th>Mobile number</th>
+					<th>Physical address</th>
+					<th>Ward</th>
+					<th>Amount applied for</th>
+					<th>Family</th>
+					<th>Number of siblings alive</th>
+					<th>Estimated Family Income</th>
+					<th>Father name</th>
+					<th>Telephone number</th>
+					<th>Occupation </th>
+					<th>Type of employment</th>
+					<th>Main Source of Income</th>
+					<th>Mother name</th>
+					<th>Telephone number</th>
+					<th>Occupation </th>
+					<th>Type of employment</th>
+					<th>Main Source of Income</th>
+					<th>Guardian name</th>
+					<th>Telephone number</th>
+					<th>Occupation </th>
+					<th>Type of employment</th>
+					<th>Main Source of Income</th>
+					<th>Why are you applying for bursary</th>
+					<th>Have you received financial support/bursary from NG-CDF in the past?</th>
+					<th>If yes, specify how much and when last you received support</th>
+					<th>Have you received financial support or scholarship from the organization in the past?</th>
+					<th>If yes, Provide details</th>
+					<th>State source of funding for your education in the past</th>
+					<th>a) In secondary school</th>
+					<th>b) In College</th>
+					<th>c) In University</th>
+					<th>a)What is your average academic performance?</th>
+					<th>Academic Performance</th>
+					<th>b) Have you been sent away from school?</th>
+					<th>If yes provide reasons for your absence and specify number of weeks you stayed away from school</th>
+					<th>c) Annual fees(as per fees structure)Kshs.</th>
+					<th>d) Last semester's fees</th>
+					<th>e) Current semester's fees
+					</th>
+					<th>f) Next semester's fees</th>
+					<th>The student/parent/guardian should provide the names and telephone numbers of atleast two referees who know the family well.</th>
+					<th>1. Full Name</th>
+					<th>Telephone Number</th>
+					<th>2. Full Name</th>
+					<th>Telephone Number</th>
+					
+			<?php
+include "applicationform.php";
+	
+$query = mysql_query("select * from applicationform ")or die(mysql_error());
+		while($row = mysql_fetch_array($query)){
+		
+	
+		?>			
+                   		
+                    				
+		    </tr>
+	
+<tbody>
+<!-----------------------------------Content------------------------------------>
+	<?php
+            
+            $sel = "SELECT * FROM applicationform ";
+            $rs = $conn->query($sel);
+            $rws = $rs->fetch_assoc();
+      ?>
+	
+	<li>
+		
+								
+		<tr>
+		     	
+		    <td><?php echo $row['name']; ?></td>
+			<td><?php echo $row['gender']; ?></td>
+			<td><?php echo $row['DateofBirth']; ?></td>
+			<td><?php echo $row['IDnumberBirthCertno']; ?></td>
+			<td><?php echo $row['NameofSchool']; ?></td>
+			<td><?php echo $row['study']; ?></td>
+			<td><?php echo $row['CourseDuration']; ?></td>
+			<td><?php echo $row['ExpectedCompletion']; ?></td>
+			<td><?php echo $row['Mobileno']; ?></td>
+			<td><?php echo $row['Physicaladdress']; ?></td>
+			<td><?php echo $row['Ward']; ?></td>
+			<td><?php echo $row['amount']; ?></td>
+			<td><?php echo $row['Family']; ?></td>
+			<td><?php echo $row['siblings']; ?></td>
+			<td><?php echo $row['EstimatedFamilyIncome']; ?></td>
+			<td><?php echo $row['FatherName']; ?></td>
+			<td><?php echo $row['Mobilenumber']; ?></td>
+			<td><?php echo $row['Occupation1']; ?></td>
+			<td><?php echo $row['EMPLOYMENT']; ?></td>
+			<td><?php echo $row['Income']; ?></td>
+			<td><?php echo $row['MotherName']; ?></td>
+			<td><?php echo $row['Telephoneno']; ?></td>
+			<td><?php echo $row['ExpectedCompletion']; ?></td>
+			<td><?php echo $row['Mobileno']; ?></td>
+			<td><?php echo $row['Occupation2']; ?></td>
+			<td><?php echo $row['Typeofemployment']; ?></td>
+			<td><?php echo $row['MainSourceofIncome']; ?></td>
+			<td><?php echo $row['GuardianName']; ?></td>
+			<td><?php echo $row['Telephone']; ?></td>
+			<td><?php echo $row['Occupation3']; ?></td>
+			<td><?php echo $row['Sourceofemployment']; ?></td>
+			<td><?php echo $row['SourceofIncome']; ?></td>
+			<td><?php echo $row['userdata']; ?></td>
+			<td><?php echo $row['funding']; ?></td>
+			<td><?php echo $row['support']; ?></td>
+			<td><?php echo $row['Additionalfunding']; ?></td>
+			<td><?php echo $row['details']; ?></td>
+			<td><?php echo $row['educationfunding']; ?></td>
+			<td><?php echo $row['Secondaryfunding']; ?></td>
+			<td><?php echo $row['Collegefunding']; ?></td>
+			<td><?php echo $row['universityfunding']; ?></td>
+			<td><?php echo $row['MainSourceofIncome']; ?></td>
+			<td><?php echo $row['performance']; ?></td>
+			<td><?php echo $row['school']; ?></td>
+			<td><?php echo $row['reasons']; ?></td>
+			<td><?php echo $row['annualfees']; ?></td>
+			<td><?php echo $row['lastbalance']; ?></td>
+			<td><?php echo $row['Currentbalance']; ?></td>
+			<td><?php echo $row['Nextbalance']; ?></td>
+			<td><?php echo $row['ReffereeName']; ?></td>
+			<td><?php echo $row['Telnumber']; ?></td>
+			<td><?php echo $row['FullName']; ?></td>
+			<td><?php echo $row['telephonenumber']; ?></td>
+           
+		  
+			
+            </tr>
+			</li>							   
+
+</tbody>
+</table>
+</form>		
+<input type="" value="" onclick="window.submit()">
+</form>
+</body>
+</html>
